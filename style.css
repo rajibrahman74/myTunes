@@ -26,6 +26,7 @@ body {
     line-height: 1.4;
     font-weight: 300;
     border-radius: 3px solid red;
+    scroll-behavior: smooth;
 }
 button {
     border: none;
@@ -77,14 +78,14 @@ nav {
     color: white;
     margin: 0 15px;
 }
-ul {
+#spesic {
     display: flex;
 }
-ul > li {
+#spesic > li {
     list-style-type: none;
     margin: 0 15px;
 }
-ul > li > a {
+#spesic > li > a {
     text-decoration: none;
     color: white;
     font-style: normal;
@@ -93,7 +94,7 @@ ul > li > a {
     border-bottom: 2px solid transparent;
     transition: 0.2s ease-in;
 }
-ul > li > a:hover {
+#spesic > li > a:hover {
     border-bottom: 2px solid #fff;
     transition: 0.2s ease-in;
 }
@@ -148,9 +149,6 @@ ul > li > a:hover {
     gap: 30px;
     color: white;
 }
-#spycial {
-    font-size: 21px;
-}
 .container .music-button {
     background-color: var(--red600);
 }
@@ -158,6 +156,11 @@ ul > li > a:hover {
     position: relative;
     top: 400px;
     margin-top: -400px;
+}
+#spycial {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 /* About Music Section style start */
@@ -169,4 +172,101 @@ ul > li > a:hover {
     place-items: center;
     text-align: center;
     margin-bottom: 50px;
+}
+.about-music p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Video section style start */
+
+.video-section {
+    min-height: 800px;
+    background-image: url(images/video.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.video-section .container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    margin-top: -200px;
+}
+.video-section .container h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.video-section .container p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+/* Gift Card Section style start */
+
+.giftCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 90px 0;
+}
+.gift-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gift-content h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+.gift-content p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* Footer Section Style start */
+
+.footer-upper {
+    background: #1B0058;
+    padding: 20px;
+}
+.footer-upper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.footer-links h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.footer-links li {
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 15px;
+}
+.footer-lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #270082;
+    color: white;
+    font-size: 14px;
+    font-weight: 300px;
+    padding: 20px;
 }
