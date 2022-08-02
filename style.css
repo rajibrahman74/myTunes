@@ -1,0 +1,172 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Css Veriables */
+
+:root {
+    --purple500: #281154;
+    --purple300: #270082;
+    --purple600: #1b0058;
+    --red600: #dc0000;
+    --body: #f9f6ff;
+    --max-width: 1200px;
+  }
+
+/* Common Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+    font-weight: 300;
+    border-radius: 3px solid red;
+}
+button {
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.second-button {
+    background: #37008E;
+}
+
+/* Header Section Style Start */
+
+header {
+    background: #270082;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.07);
+    z-index: 100;
+}
+nav {
+    color: white;
+    padding: 23px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+.logo i {
+    font-size: 45px;
+    color: white;
+    margin: 0 15px;
+}
+ul {
+    display: flex;
+}
+ul > li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+ul > li > a:hover {
+    border-bottom: 2px solid #fff;
+    transition: 0.2s ease-in;
+}
+
+/* Hero section style start */
+
+.hero-section {
+    height: 100vh;
+    background-image: url(images/hero_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.container h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 84px;
+}
+.container h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+.container p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+/* Music Section Style Start */
+
+.music-section {
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+#spycial {
+    font-size: 21px;
+}
+.container .music-button {
+    background-color: var(--red600);
+}
+.container .ipad-iphone-img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+/* About Music Section style start */
+
+.about-music {
+    padding-top: 500px;
+    display: grid;
+    gap: 50px;
+    place-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
